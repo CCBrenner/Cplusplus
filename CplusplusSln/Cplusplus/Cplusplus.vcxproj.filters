@@ -23,7 +23,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TestHeader.h">
+    <ClInclude Include="GetStringFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

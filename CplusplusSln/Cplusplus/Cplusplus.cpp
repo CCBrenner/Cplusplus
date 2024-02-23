@@ -1,27 +1,37 @@
 // Cplusplus.cpp : This file contains the 'main' function. Program execution begins and ends there.
 
 #include <iostream>
+#include <vector>
 using namespace std;
-#include "TestHeader.h"
+#include "GetStringFunction.h"
 
 int main()
 {
     bool boolean = false;
+    MyClass newInstance;
+    vector<string> ducks = { "Zach", "Kyle", "Todd", "Beastie" };  // array
 
+    for (string duck : ducks) {  // for-each loop
+        cout << duck << endl;
+    }
+
+    ducks[3] = "Tiffany";
+
+    int size = ducks.size();
+    cout << "Size of ducks vector: " << size << endl;
+    newInstance.printAllArrayElements(ducks);
     
     if (boolean) {
         cout << "Hello World!" << endl;
     }
     else {
         cout << GetString();
+        //cout << newInstance.myFunction();
+        //cout << newInstance.myPrivateFunction();
     }
     cin.get();
 }
 
-
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
 
 // Tips for Getting Started: 
 //   1. Use the Solution Explorer window to add/manage files
